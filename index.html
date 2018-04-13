@@ -9,7 +9,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <style>
-        
+        body {
+            font-family: "Franklin Gothic Book";
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 280px);
+            grid-gap: 5px;
+            justify-content: center;
+        }
+
+        .item {
+            border-radius: 5px;
+            padding: 10px;
+            background: #f2f2f2;
+        }
+
+        .item article {
+            max-width: 100%;
+        }
+
+        .level-1 {
+            grid-row-end: span 3;
+        }
+
+        .level-2 {
+            grid-row-end: span 2;
+        }
+
+        .level-3 {
+            grid-row-end: span 1;
+        }
     </style>
 </head>
 
@@ -17,29 +48,86 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
+                Universidad UNAD
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">Home</a>
+                        aria-selected="true">Inicio</a>
                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                        aria-selected="false">Profile</a>
+                        aria-selected="false">Lecturas</a>
                     <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">Messages</a>
+                        aria-selected="false">Multimedia</a>
                     <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                        aria-selected="false">Settings</a>
+                        aria-selected="false">Actividades</a>
+                    <a class="nav-link" id="v-pills-author-tab" data-toggle="pill" href="#v-pills-author" role="tab" aria-controls="v-pills-author"
+                        aria-selected="false">Autores</a>
                 </div>
             </div>
             <div class="col-8">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...1</div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...2</div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...3</div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...4</div>
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">                            
+                        <div class="contenedor">
+                            <div class="item level-1">
+                                <article>
+                                    <h5>
+                                        <b>Objetivo general</b>
+                                    </h5>
+                                    <p>
+                                        Aprender los diferentes conceptos de la Seguridad Informatica, y su importancia
+                                        dentro de nuestra vida cotidiana.
+                                    </p>
+                                    <h5>
+                                        <b>Objetivos especificos</b>
+                                    </h5>
+                                    <p>
+                                        <ol>
+                                            <li>Comprender que es la Seguridad Infomatica.</li>
+                                            <li>Exponer los diferentes peligros a los que estamos expuestos.</li>
+                                            <li>Aprender habitos seguros para la protección de la información en nuestra vida cotidiana.</li>
+                                        </ol>
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="item level-2">
+                                <article>
+
+                                </article>
+                            </div>
+                            <div class="item level-3">
+                                <article>
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        ...2
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        ...3
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        ...4
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-author" role="tabpanel" aria-labelledby="v-pills-author-tab">
+                        ...5
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
             </div>
         </div>
+        <footer>
+            <div class="row">
+                <div class="col">
+                    Footer Universidad UNAD
+                </div>
+            </div>
+        </footer>
     </div>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
